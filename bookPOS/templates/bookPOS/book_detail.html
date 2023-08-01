@@ -1,0 +1,17 @@
+{% extends 'bookPOS/base.html' %}
+
+{% block content %}
+    <hr>
+    <div class="bookinfo">
+        <div>
+            <!--<img src={{ book.imagelink }} alt="Our appologies, we were unable to display the image.">-->
+        </div>
+        <div>
+            <h2>{{ book.title }}</h2>
+            <p>by <strong>{{ book.author }}</strong></p>
+            <p>Publisher: {{ book.publisher }}</p>
+            <p>Published: {{ book.pub_date }}</p>
+            <p>Price: ${{ book.price }}</p>
+        </div>
+    </div>
+{% endblock %}
